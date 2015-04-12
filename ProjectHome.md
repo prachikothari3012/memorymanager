@@ -1,0 +1,3 @@
+This project demonstrates how memory management works, how malloc/free works. A large chunk of memory is allocated and assigned to the memory manager. Then on-request the memory manager allocates chunks for memory to the user. The memory manager returns a pointer. It uses a binary tree to sort the free-chunk-list and the used-chunk-list. When the user deallocates the chunks, memory manager tries to join the adjacent free chunks to create a big free chunk. This is how it solves the problem of fragmentation.
+This project is completely written in C language and have been tested on MSVC and GCC.
+This project is primarily meant for educational purposes but can also be used for commercial applications.
